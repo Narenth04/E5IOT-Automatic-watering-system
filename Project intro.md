@@ -1,0 +1,5 @@
+# E5IOT-Automatic-watering-system
+Project by Mohammad and Narenth
+
+Intro:
+When we buy bigger plants/trees in Bilka or somewhere else, we usually buy them when they're approximately between 5 months - 1.5 year old, depending on the tree-type. They're normally pre-grown at a plantnursery, where each plant is taken care of, before being shipped to a seller. The process of watering the plants is done easier by automating it. This can be achieved by putting a wireless MCU connected to a moisturesensor in the soil of the plant, where the MCU will order a valve to open as soon as the soilmoisture is below level. This allows water to flow to the plant. Some nurseries are placed outside under the sky. Here it is convenient that the MCU is connected to the internet, where a weatherforecast from a cloud can give the MCU information whether or not there will be rain. If it will rain some hours later, the system will not provide water for the plants. The plants will then be relying on the rain to water the plants.
