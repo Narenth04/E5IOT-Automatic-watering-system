@@ -1,0 +1,53 @@
+
+void loop() {
+  // Get some data
+  String data = String(10);
+  // Trigger the integration
+  Particle.publish("rain", data, PRIVATE);
+  // Wait 60 seconds
+  delay(60000);
+}
+      
+
+
+void setup() {
+  // Subscribe to the integration response event
+  Particle.subscribe("hook-response/rain", myHandler, MY_DEVICES);
+}
+
+void myHandler(const char *event, const char *data) {
+  // Handle the integration response
+}
+
+
+/*
+void setup() {
+  // Subscribe to the integration response event
+  Particle.subscribe("hook-response/rain", myHandler, MY_DEVICES);
+  Serial.begin(9600);
+}
+
+int i = 0;
+
+void myHandler(const char *event, const char *data) {
+  // Handle the integration response
+  i++;
+  Serial.print(i);
+  Serial.print(event);
+  Serial.print(", data: ");
+  if (data)
+    Serial.println(data);
+  else
+    Serial.println("NULL");
+}
+          
+
+void loop() {
+  // Get some data
+
+  // Trigger the integration
+ Particle.subscribe("hook-response/rain", myHandler, MY_DEVICES);
+  // Wait 60 seconds
+  delay(10000);
+}
+*/
